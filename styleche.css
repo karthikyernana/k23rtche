@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    border:border-box;
+    
+   }
+html{
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+} 
+   
+.navbar {
+    height:60px;
+    background-color: black;
+    color: white;
+    align-items: center;
+    display:flex;
+    justify-content:space-evenly ;
+}
+/**box1**/
+.nav-logo {
+    height:50px;
+    width:100px;
+   cursor:default;
+}
+.logo {
+    background-image: url("evhub.png");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+    
+       }
+.border {
+    border: 1.5px solid transparent;
+}
+.border:hover {
+    border:1.5px solid white;
+}
+/**box2**/
+.nav-search {
+    display: flex;
+    justify-content: space-evenly;
+    
+    background-color: green;
+    width: 610px;
+    height: 40px;
+    border-radius: 4px;
+}
+.nav-search:hover {
+    border:2.5px solid green;
+}
+
+.search-input {
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    font-size: 1rem;
+    border: none;
+    align-items: center;
+
+}
+.search-icon {
+    width: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:1.3rem;
+    cursor: default;
+}
+
+/**box3**/
+
+.sign-in {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    font-family: serif;
+    
+    text-align: center;
+   
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    border-radius:25px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+  }
+  .sign-in:active {
+    transform: scale(0.96);
+  }
+  /**box4**/
+  .nav-orders i {
+    
+    font-size: 35px;
+    cursor: default;
+   
+  }
+  .nav-orders {
+    font-size: 1rem;
+    cursor: default;
+  }
+  /**box4**/
+  .panel {
+    height: 60px;
+    display:flex;
+    background-color:transparent;
+   
+    align-items: center;
+  }
+  
+  .panel-ops button {
+    display:inline;
+    margin-left: 75px; 
+    background-color: transparent;
+   padding: 2px 50px;
+   color:white;
+   font-family: 'Lucida Sans';
+   font-size: 20px;
+   font-weight: 700;
+   border-radius: 10px;
+   font-display: flex;
+   cursor: pointer;
+   text-decoration: none;
+   border: 3px solid green;
+   transition: 0.3s;
+
+  }
+ 
+  .panel-ops button:active {
+    transform: scale(0.96);
+  }
+  .panel-ops button:hover {
+   
+    color:black;
+    background-color:#709809;
+  }
+  .panel-ops{
+    display: flex;
+    margin: 35px;
+    font-size: 1rem;
+   
+  }
+  /**herosec**/
+  .hero-section {
+    width: 100%;
+    height: 100vh;
+    font-family: "poppins";
+    
+    background-color: rgba(0,0,0,0.4);
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  .content {
+  
+    text-align: center;
+   
+  }
+  
+  .content h1{
+    font-size: 95px;
+    color:whitesmoke;
+    margin-bottom: 50px;
+    cursor: default;
+    
+    
+  }
+  .content a{
+    font-size: 25px;
+    color:beige;
+    text-decoration: none;
+    border: 2px solid beige;
+    padding: 15px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+   
+    
+  }
+  .content a:hover {
+    background-color: beige;
+    color: black;
+   
+  }
+  .background-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+  }
+  @media(min-aspect-ratio:16/9){
+    .background-clip{
+      width: 100%;
+      height:auto;
+
+    }
+  }
+  @media(max-aspect-ratio:16/9){
+    .background-clip{
+      width:auto;
+      height: 100%;
+    }
+  }
+  ::-webkit-scrollbar{
+    background: transparent;
+    width:0;
+  }
+  ::-webkit-scrollbar-thumb{
+    background: #04AA6D;
+   
+  }
+/*  shop-section*/
+.shop-section {
+  display: flex;
+  justify-content: space-evenly;
+  background-color:rgba(0,0,0,0.4);
+}
+.box {
+  border: 2px solid white;
+  border-radius:10px;
+  height: 100px;
+  width:22%;
+  height:450px;
+  margin-bottom: 30px;
+  background-color: white;
+  cursor: default;
+}
+.box1 h2{
+  padding-left: 20px;
+  padding-top: 20px; 
+  font-family: 'Lucida Sans';
+}
+.box2 h2{
+  padding-left: 20px;
+  padding-top: 20px; 
+  font-family: 'Lucida Sans';
+}
+.box3 h2{
+  padding-left: 20px;
+  padding-top: 20px; 
+  font-family: 'Lucida Sans';
+  
+}
+.box4 h2{
+  padding-left: 20px;
+  padding-top: 20px; 
+  font-family: 'Lucida Sans';
+}
+.background-clip1 {
+ 
+  height: 300px;
+  padding:18px ;
+}
+.box2-img {
+  height: 300px;
+  width: 90%;
+ margin: 18px;
+}
+.box3-img {
+  height: 300px;
+  margin:18px;
+  width: 90%;
+}
+.box4-img {
+  height: 300px;
+  margin-left:40px;
+  margin-right:40px;
+  margin-top:35px;;
+  width: 80%;
+}
+.buynow {
+  padding-left: 30px;
+  font-weight: 1000;
+  color: #04AA6D;
+  cursor: pointer;
+  text-decoration: none;
+
+
+}
+.headreview {
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  cursor: default;
+  
+}
+.reviewbox {
+  width:auto;
+  height: 370px;
+  margin-left: 48px;
+  margin-right: 48px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  box-shadow:gray 50%;
+  border: 1px solid gray;
+  border-radius:10px;
+ padding: 25px;
+ display: flex;
+ box-shadow: 30px 30px 30px  gray;
+ 
+}
+.review1 {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  
+}
+.review-data {
+  width:80%;
+  padding-left: 20px;
+  text-align:justify;
+  font-size: 20px;
+  cursor: default;
+}
+.star1 {
+  text-align: end;
+  padding-top: 150px;
+  color:gold;
+  padding-right: 20px;
+  cursor: default;
+}
+.review2 {
+  height: 290px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: default;
+}
+.star2 {
+  text-align: end;
+  padding-top: 100px;
+  color:gold;
+  padding-right: 20px;
+  cursor: default;
+}
+.review3 {
+  height: 290px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: default;
+}
+.star3 {
+  text-align: end;
+  padding-top: 160px;
+  color:gold;
+  padding-right: 20px;
+  cursor: default;
+}
+.review4 {
+  height: 290px;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: default;
+}
+.star4 {
+  text-align: end;
+  padding-top: 140px;
+  color:gold;
+  padding-right: 20px;
+  cursor: default;
+}
+.evhead {
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  cursor: default;
+}
+.evtech p {
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-size: 20px;
+  cursor:default;
+  line-height: 30px;
+}
+.evnews {
+  background-color: rgb(202, 227, 235);
+  
+}
+.newshead {
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  cursor: default;
+}
+.news h1 {
+  padding-left: 20px;
+  font-weight: 1000;
+  cursor:default;
+}
+.news img {
+  margin-left: 23%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width:50rem;
+  height: 25rem;
+  border-radius: 35px;
+ 
+}
+.news p {
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-size: 20px;
+  cursor:default;
+}
+
+
+
+.about1 {
+  font-size: 50px;
+  font-weight: 600;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  cursor: default;
+ 
+}
+.web-information h1 {
+  padding-left: 20px;
+  font-weight: 1000;
+  cursor:default;
+}
+.web-information p {
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: justify;
+  font-size: 20px;
+  cursor:default;
+}
+
+.panel2 {
+  background-color: aquamarine;
+  width:100%;
+ 
+  height: 40px;
+  text-align: center;
+  
+  
+  border: aquamarine; 
+ text-decoration: none;
+}
+.panel2 button {
+  font-size: 20px;
+  font-weight: 600;
+  background-color: aquamarine;
+  text-decoration: none;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  color: black;
+  cursor: pointer;
+  border-color: aquamarine;
+  width: 100%;
+}
+.contact-us {
+  width: 100%;
+  height: 230px;
+  background-color:grey;
+ font-size: 20px;
+ 
+}
+.contact-us i{
+  padding-left: 45%;
+  padding-right: 10px;
+  padding-top: 15px;
+  font-size: 20px;
+ cursor: pointer;
+}
+.panel4 {
+  width: 100%;
+  height:80px;
+  background-color: bisque;
+ 
+}
+.copyright {
+  padding-top: 20px;
+  font-weight: 500;
+  text-align: center;
+  cursor:default;
+}
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+
